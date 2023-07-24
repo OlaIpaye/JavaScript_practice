@@ -36,6 +36,17 @@ console.log(outcome);
 
 
 
+// Undefined & Null
+let sex;
+
+console.log(sex, sex + 3, `Do not have ${sex}`); // It returns undefined when I output it because when a variable hasnt been given a value, it automatically output as undefined.
+
+
+let age = null;
+
+console.log(age, age + 3, `Do not have ${age}`); // The null value will output as null when used on it's own or in a template string, but it will return 0 when used with another number.
+
+
 
 
 
