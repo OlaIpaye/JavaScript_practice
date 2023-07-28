@@ -53,11 +53,26 @@ let ages = 30;
 
 
 
-// TYPE CONVERSION
-let score = "200";
+// EXPLICIT DATA TYPE CONVERSION
+let score = "200"; // It started as a string value.
 
-score = Number(score); // Used this Number function to change the data type from a string to a number and then added 1 to it in the console. It outputs as 201.
-console.log(score + 1);
+score = Number(score); // Used this Number function to convert the data type from a string value to a number value and then added 1 to it in the console. It outputs as 201.
+console.log(score + 1); // Logged out the variable, and added 1 to it, since it has been reassigned and converted to a number value.
+console.log(typeof score); // Logged out the primitive data type.
+
+
+let stringToNumber = String(50); // Used the String function to convert the value stored in the variable from a number into a string data type.
+console.log(stringToNumber, typeof stringToNumber); // Then I logged out the variable and used the typeof operation to output the original data type.
+
+// TRUTHY and FALSEY VALUES
+// let truFal = Boolean(0); // Used the Boolean function to output the truthy or falsey value stored in the variable. In JS, positive numbers are considered truthy values and negative numbers are considered falsey values. So it outputs as true.
+
+let truFal = Boolean("0"); // This outputs as true because strings are always truthy values unless they are empty, then that is the only time they are falsey values.
+
+console.log(truFal, typeof truFal); // Logged out the variable and the primitive data type.
+
+// EXPLICIT DATA TYPE CONVERSION
+// This type fo data type conversion is what happens when JavaScript converts data types in the background by coersion, e.g by converting a string container a number, into a number value when adding that value to another number.
 
 
 
