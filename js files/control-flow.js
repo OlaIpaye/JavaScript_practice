@@ -34,12 +34,36 @@ for (let i = 0; i < names.length; i++) { // Used this for loop to iterate throug
 console.log("----------------------------------------------------------");
 
 // while loop - the syntax is different from for loops
-
-let i = 0;
+/*
+let i = 0; // initialiazing variable.
 
 while (i < 5) { // When using a while loop, I don't initialize the variable inside the loop, but it should already exist outside...
     console.log("In loop: ", i);
     i++; // Then put the execution expression below the console, inside the code block.
 }
+*/
 
+// const realNames = ["Dimeji", "Toby", "Micheal", "Bukola", "Testimony"]; // An array with names with values in lenght of 5.
+
+// let i = 0;
+
+// while (i < realNames.length) {
+//     console.log(realNames[i]);
+//     i++;
+// }
+
+
+// do while loop
+
+let i = 5; // do while loop initializes the variable first.
+
+do{
+    console.log("Value of i is: ", i); // Used a do while loop to initialize this code, regardless of the condition in the above variable.
+    i++; // Then added 1 to it..
+} while(i < 5); // Then execute this condition. So it will iterate the code block once because the value in the variable is 5.
+
+console.log("----------------------------------------------------------");
+
+
+// if statements
 
