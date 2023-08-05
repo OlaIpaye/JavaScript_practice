@@ -47,9 +47,73 @@ let age = null;
 console.log(age, age + 3, `Do not have ${age}`); // The null value will output as null when used on it's own or in a template string, but it will return 0 when used with another number.
 
 
+console.log("--------------------------------------------------------------------");
 
 
 
+// OBJECTS - examples from my Coding Bootcamp
+
+// It's done when the `customerOrder` object has three properties that store the drink's name, the number of sugars, and a Boolean indicating whether the order is ready.
+
+let customerOrder = {
+    drink: "coffee",
+    numbOfSugar: 4,
+    isOrderReady: false
+};
+
+console.log(customerOrder);
+
+// It's done when the drink name and the number of sugars is logged to the console.
+
+console.log(customerOrder.drink);
+console.log(customerOrder.numbOfSugar);
+
+// It's done when, if the order is ready, the message `"Ready for pick-up"` logs.
+
+// if (customerOrder.isOrderReady == true) {
+//     console.log("Ready for pick-up");
+// } 
+
+if (customerOrder.isOrderReady == true) {
+    console.log(`Ready for pick-up: ${customerOrder.drink}`);
+} 
+
+// It's done when, if the order is not ready, the message `"Still in order queue"` logs.
+
+// else {
+//     console.log("Still in order queue");
+// }
+
+else {
+    console.log(`Still in order queue: ${customerOrder.drink}`);
+}
+
+console.log("----------------------------------------");
 
 
+// Using a For...in statement for Objects
 
+for (let order in customerOrder) {
+    console.log(order); // Used a for...in statement to output the const object by creating a new variable to access the key property in the const object and then logged to console.
+}
+
+for (let order in customerOrder) {
+    console.log(customerOrder[order]); // To log only the values in the const object, I used a for...in statment to create a new variable and used the new variable name in a bracket notation with the const object name.
+}
+
+// Using a For...of statment for Arrays
+const arrays = [1, 2, 3, 4, 5];
+
+for (let logArray of arrays) {
+    console.log(logArray); // Used the For..of statement to log out the values in the const variable.
+}
+
+console.log("----------------------------------------------------------------");
+
+// Object.keys()
+
+console.log(Object.keys(customerOrder)); // object.keys() outputs the const object key properties in an array.
+
+console.log(Object.values(customerOrder)); // object.values() outputs the const object values in an array.
+
+console.log(Object.entries(customerOrder)); // object.entries() outputs the const object key properties and values in an array.
