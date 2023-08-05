@@ -117,3 +117,108 @@ console.log(Object.keys(customerOrder)); // object.keys() outputs the const obje
 console.log(Object.values(customerOrder)); // object.values() outputs the const object values in an array.
 
 console.log(Object.entries(customerOrder)); // object.entries() outputs the const object key properties and values in an array.
+
+
+console.log("----------------------------------------------------------------");
+
+
+// It's done when the `menu` object has properties that store drink names, and prices.
+const menu = {
+    coffee: 4.50,
+    hotChocolate: 4,
+    milkshake: 3.50,
+    latte: 2,
+};
+
+console.log(Object.keys(menu));
+
+
+// It's done when the total price of the menu is calculated and printed to the console.
+
+console.log(menu.coffee + menu.hotChocolate + menu.milkshake + menu.latte);
+
+
+// Another way to do the above using a for loop
+
+let totalPrice = Object.values(menu); // Stored the object property values in a let variable.
+
+let menuTotal = 0; // Stored 0 in another variable to later use to output the For loop below.
+
+for (let i = 0; i < totalPrice.length; i++) {
+    menuTotal += totalPrice[i];
+}
+
+console.log("Total drinks menu cost:", + menuTotal);
+
+// console.log(`Total drinks menu cost: ${menuTotal}`); // or log the above using Template string
+
+
+console.log("---------------------------------------------------------------");
+
+
+
+// Create a `menu` object that has properties that store drink options, food options, milk options, and size options.
+
+const menuObject = {
+    drinks: {
+        ["name"]: ["coffee"],
+        ["price"]: [5],
+        ["size"]: ["large", "small", "xtraSmall"],
+        ["withMilk"]: [false],
+        ["iced"]: [true],
+        ["withSugar"]: [true]
+    },
+    food: {
+        cake: false,
+        rice: true,
+        pizza: true,
+    },
+    milk: {
+        wholeMilk: "100%",
+        almondMilk: "vegan",
+        hempMilk: "vegetarian",
+    },
+    size: {
+        large: true,
+        small: true,
+        xtraLarge: false
+    }
+
+};
+
+
+// Each data set within the `menu` object should be created from either an array or object.
+
+// Done.
+
+
+
+// The Drinks array should consist of drink objects that contain the following properties if relevant to that drink: Name, Price, Size Options, Milk Options (If necessary), Iced or Not, Sugar or Not.
+
+// Done.
+
+
+// Print the following to the console: The price of a drink, The price of two drinks, The milk and size options
+
+
+console.log(`The coffee drink costs: ${menuObject.drinks.price} pounds.`);
+
+console.log(`Two coffee drinks cost: ${menuObject.drinks.price * 2} pounds.`);
+
+console.log(`You can choose from these milk options: ${Object.keys(menuObject.milk)}`);
+
+console.log(`You can choose from these size options: ${Object.keys(menuObject.size)}`);
+
+
+// Get the length of drinks Object in the menuObject variable multidimensional object of array and objects
+
+let drinksLength = Object.keys(menuObject.drinks).length; // Created a new let variable to store the length of the drinks array within the menuObject multidimensional object
+
+console.log(drinksLength); // Then logged the new variable to the console.
+
+
+
+console.log("----------------------------------------------------------");
+
+
+
