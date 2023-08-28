@@ -13,6 +13,14 @@ Feel free to browse through the code to see how much I am learning and what I am
 - Watch youtube videos, read documentations, and listen to the "All things HTML podcast about JavaScript".
 - Watch all videos and study materials from my Coding Bootcamp with the Uni of Birmingham.
 
+## Code Screenshots of concepts I am learning
+
+- Using textContent to access and modify elements in the DOM
+
+  ![using textContent](images/textContent.png)
+
+*
+
 ## Deadline to become an above average JavaScript coder
 
 - October 1st 2023.
