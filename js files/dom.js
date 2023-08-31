@@ -52,3 +52,56 @@ console.log(secondPara.textContent); // logged out the text inside the second pa
 
 //
 //
+//
+
+// Timers and Intervals
+
+// setTimeout() - used to schedule the execution of a function or a piece of code after a scpecified delay in milliseconds. Allows me to introduce time delay before executing a code, which can be useful for implementing various bahaviors, animations, or asynchronous tasks.
+
+// setTimeout() is an asynchronous function, meaning that the timer function will not pause execution of other functions in the functions stack. In other words, you cannot use setTimeout() to create a "pause" before the next function in the function stack fires.
+
+// The below example outputs all 3 messages to the console in 5 seconds
+setTimeout(() => {
+  console.log("this is the first message");
+}, 5000); // gets outputs last
+setTimeout(() => {
+  console.log("this is the second message");
+}, 3000); // gets outputs second
+setTimeout(() => {
+  console.log("this is the third message");
+}, 1000); // gets outputs first
+
+// Output:
+// this is the third message
+// this is the second message
+// this is the first message
+
+//
+//
+//
+
+// Event Listeners
+
+// Click Event -
+const clickButton = document.getElementById("my-Button");
+
+clickButton.addEventListener("click", function () {
+  alert("Button clicked!");
+});
+
+// Mouseover Event -
+const hoverOver = document.getElementById("hover-Div");
+
+hoverOver.addEventListener("mouseover", function () {
+  hoverOver.textContent = "Text changed after mouseover detected";
+  hoverOver.setAttribute("style", "color: red");
+});
+
+// Window load Event -
+window.addEventListener("load", function () {
+  alert("Page has loaded");
+});
+
+// Form Submit Event -
+
+// Keypress Event -
