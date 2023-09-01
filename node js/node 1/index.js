@@ -1,6 +1,7 @@
 // Learning NODE.JS
 
 //
+//
 
 // PROCESS.ARGV - An array that stores the command line arguments passed to thenode.js script when iot is executed in the terminal.
 // argv stands for "argument vector".
@@ -16,6 +17,19 @@ const num2 = process.argv[3];
 
 // It's done when I compare those two variables to see whether they are the same or not.
 // It's done if the program returns `true` when the values are the same and `false` if they are not.
-if (num1 === num2) {
-  console.log(true);
-} else console.log(false);
+
+// Used if statement to evaluate the arguments and determine if the condition is true or false.
+// if (num1 === num2) {
+//   console.log(true);
+// } else console.log(false);
+
+//
+
+// Alternatively, using a Ternary Operator instead for the above
+console.log(num1 === num2 ? true : false);
+
+//
+//
+//
+
+//
