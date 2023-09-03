@@ -12,8 +12,8 @@
 // Done.
 
 // It's done when I use `process.argv` to assign two arguments to variables.
-const num1 = process.argv[2];
-const num2 = process.argv[3];
+// const num1 = process.argv[2];
+// const num2 = process.argv[3];
 
 // It's done when I compare those two variables to see whether they are the same or not.
 // It's done if the program returns `true` when the values are the same and `false` if they are not.
@@ -26,10 +26,19 @@ const num2 = process.argv[3];
 //
 
 // Alternatively, using a Ternary Operator instead for the above
-console.log(num1 === num2 ? true : false);
+// console.log(num1 === num2 ? true : false);
 
 //
 //
-//
 
-//
+// FS Module - Its a built-in module that provides file system functionality, allowing me to work with files, directories and thier properties. Allows me to read, write, update, delete files.
+// fs is a Node standard library package for reading and writing files
+
+// (fs.readFile) - Reading a file
+const fs = require("fs"); // Gsranting file system access from node, very important.
+
+// Return the contents of 'data.csv' as a string in the variable "data"
+// "utf8" encodes the raw buffer data in human-readable format
+fs.readFile("data.csv", "utf8", (error, data) =>
+  error ? console.error(error) : console.log(data)
+); // Goes into our file, utf8 helps in reading the file contents, passed it 2 arguments (if there is error or if not read the data file).. then output accordingly uisng the ternary operator.
