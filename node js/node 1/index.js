@@ -35,10 +35,21 @@
 // fs is a Node standard library package for reading and writing files
 
 // (fs.readFile) - Reading a file
-const fs = require("fs"); // Gsranting file system access from node, very important.
+// Importing fs module using the reqire statement and granting access from node, very important.
+const fs = require("fs");
 
 // Return the contents of 'data.csv' as a string in the variable "data"
 // "utf8" encodes the raw buffer data in human-readable format
-fs.readFile("data.csv", "utf8", (error, data) =>
-  error ? console.error(error) : console.log(data)
-); // Goes into our file, utf8 helps in reading the file contents, passed it 2 arguments (if there is error or if not read the data file).. then output accordingly uisng the ternary operator.
+// fs.readFile("data.csv", "utf8", (error, data) =>
+//   error ? console.error(error) : console.log(data)
+// ); // Goes into our file(file to read), utf8 helps in reading the file contents(encoding format), passed it 2 arguments (call back - if there is error or if not read the data file).. then output accordingly uisng the ternary operator.
+
+//
+//
+
+// (fs.writeFile) - Writing a file
+// Importing fs module using the reqire statement and granting access from node, very important.
+
+fs.writeFile("log.txt", process.argv[2], (err) =>
+  err ? console.error(err) : console.log("Success!")
+);
