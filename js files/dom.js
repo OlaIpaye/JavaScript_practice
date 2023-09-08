@@ -83,24 +83,24 @@ setTimeout(() => {
 // Event Listeners
 
 // Click Event -
-const clickButton = document.getElementById("my-Button");
+// const clickButton = document.getElementById("my-Button");
 
-clickButton.addEventListener("click", function () {
-  alert("Button clicked!");
-});
+// clickButton.addEventListener("click", function () {
+//   alert("Button clicked!");
+// });
 
 // Mouseover Event -
-const hoverOver = document.getElementById("hover-Div");
+// const hoverOver = document.getElementById("hover-Div");
 
-hoverOver.addEventListener("mouseover", function () {
-  hoverOver.textContent = "Text changed after mouseover detected";
-  hoverOver.setAttribute("style", "color: red");
-});
+// hoverOver.addEventListener("mouseover", function () {
+//   hoverOver.textContent = "Text changed after mouseover detected";
+//   hoverOver.setAttribute("style", "color: red");
+// });
 
-// Window load Event -
-window.addEventListener("load", function () {
-  alert("Page has loaded");
-});
+// // Window load Event -
+// window.addEventListener("load", function () {
+//   alert("Page has loaded");
+// });
 
 // Form Submit Event -
 
