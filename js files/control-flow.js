@@ -5,19 +5,16 @@
 //    do what's in this code block...
 // }
 
-
 // for (initialization; condition; afterthought) // this is the for loop set up, followed by a statement
 //  statement
-
 
 // for loop
 
 for (let i = 0; i < 5; i++) {
-    console.log("In loop: ", i);
+  console.log("In loop: ", i);
 }
 
 console.log("loop finished");
-
 
 const names = ["Ola", "Toby", "Micheal", "Bukola"]; // An array with names with values in lenght of 4.
 /*
@@ -26,9 +23,10 @@ for (let i = 0; i < names.length; i++) { // Used this for loop to output each na
 }
 */
 
-for (let i = 0; i < names.length; i++) { // Used this for loop to iterate through the array and output each names in the array by using a Template string to create a html template from the names in the array.
-    let html = `<div>${names[i]}</div>`;
-    console.log(html);
+for (let i = 0; i < names.length; i++) {
+  // Used this for loop to iterate through the array and output each names in the array by using a Template string to create a html template from the names in the array.
+  let html = `<div>${names[i]}</div>`;
+  console.log(html);
 }
 
 console.log("----------------------------------------------------------");
@@ -52,18 +50,38 @@ while (i < 5) { // When using a while loop, I don't initialize the variable insi
 //     i++;
 // }
 
-
 // do while loop
 
 let i = 5; // do while loop initializes the variable first.
 
-do{
-    console.log("Value of i is: ", i); // Used a do while loop to initialize this code, regardless of the condition in the above variable.
-    i++; // Then added 1 to it..
-} while(i < 5); // Then execute this condition. So it will iterate the code block once because the value in the variable is 5.
+do {
+  console.log("Value of i is: ", i); // Used a do while loop to initialize this code, regardless of the condition in the above variable.
+  i++; // Then added 1 to it..
+} while (i < 5); // Then execute this condition. So it will iterate the code block once because the value in the variable is 5.
 
 console.log("----------------------------------------------------------");
 
-
 // if statements
 
+//
+//
+//
+
+// Switch Statement Example
+// Switch statements are useful when comparing a single value to multiple conditions.
+var myAge = 29;
+
+switch (myAge) {
+  case 30:
+    console.log("My age is 30.");
+    break;
+  case 29:
+    console.log("My real age is 29.");
+    break;
+  case 31:
+  case 40:
+  case 55:
+    console.log("These are not my real age.");
+  default:
+    console.log("My actual age is 29 and I will be 30 in Febrary 2024.");
+}
