@@ -82,6 +82,7 @@ switch (myAge) {
   case 40:
   case 55:
     console.log("These are not my real age.");
+    break;
   default:
     console.log("My actual age is 29 and I will be 30 in Febrary 2024.");
 }
